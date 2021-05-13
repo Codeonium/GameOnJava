@@ -9,8 +9,25 @@ public class Warlock {
     private ArrayList<Spell> spell;
     private String creature;
 
-    public void Warlock(String creature) {
+    public void Warlock(String creature, ArrayList<Spell> spell) {
         this.creature = creature;
+        this.spell = spell;
 
+    }
+
+    public ArrayList<Spell> getSpell() {
+        return spell;
+    }
+
+    public void setSpell(ArrayList<Spell> spell) {
+        this.spell = spell;
+    }
+
+    public String getCreature() {
+        return creature;
+    }
+
+    public void setCreature(String creature) {
+        this.creature = creature;
     }
 }
