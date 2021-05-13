@@ -1,4 +1,6 @@
-public class Potions {
+import behaviours.IHeal;
+
+public class Potions implements IHeal {
     private String name;
     private int damagePoints;
 

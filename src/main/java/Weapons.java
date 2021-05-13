@@ -1,28 +1,23 @@
-public class Weapons {
+import behaviours.IAttack;
+
+public class Weapons implements IAttack {
 
     private String name;
-    private int type;
+    private String type;
     private int damagePoints;
 
-    public Weapons(String name, int damagePoints) {
+    public Weapons(String name, String type, int damagePoints) {
         this.name = name;
+        this.type = type;
         this.damagePoints = damagePoints;
 
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getType() {
+    public String getType() {
         return type;
     }
 
-    public void setType(int type) {
+    public void setType(String type) {
         this.type = type;
     }
 
@@ -32,6 +27,14 @@ public class Weapons {
 
     public void setDamagePoints(int damagePoints) {
         this.damagePoints = damagePoints;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
 

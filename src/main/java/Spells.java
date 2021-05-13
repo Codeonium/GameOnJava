@@ -1,4 +1,7 @@
-public class Spells {
+import behaviours.IHeal;
+import behaviours.ISpell;
+
+public class Spells implements IHeal, ISpell {
     private String name;
     private int healPoints;
 
@@ -21,5 +24,9 @@ public class Spells {
 
     public void setHealPoints(int healPoints) {
         this.healPoints = healPoints;
+    }
+
+    public int cast(Spells spells) {
+        return 0;
     }
 }
