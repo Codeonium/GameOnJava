@@ -1,3 +1,5 @@
+package gear;
+
 public class Armour {
 
     private String name;

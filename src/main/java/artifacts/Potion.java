@@ -1,10 +1,12 @@
+package artifacts;
+
 import behaviours.IHeal;
 
-public class Potions implements IHeal {
+public class Potion implements IHeal {
     private String name;
     private int damagePoints;
 
-    public Potions(String name, int damagePoints) {
+    public Potion(String name, int damagePoints) {
         this.name = name;
         this.damagePoints = damagePoints;
     }

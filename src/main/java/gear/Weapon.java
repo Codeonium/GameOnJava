@@ -1,12 +1,14 @@
+package gear;
+
 import behaviours.IAttack;
 
-public class Weapons implements IAttack {
+public class Weapon implements IAttack {
 
     private String name;
     private String type;
     private int damagePoints;
 
-    public Weapons(String name, String type, int damagePoints) {
+    public Weapon(String name, String type, int damagePoints) {
         this.name = name;
         this.type = type;
         this.damagePoints = damagePoints;

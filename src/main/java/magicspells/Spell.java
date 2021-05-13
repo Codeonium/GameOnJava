@@ -1,11 +1,10 @@
-import behaviours.IHeal;
-import behaviours.ISpell;
+package magicspells;
 
-public class Spells implements IHeal, ISpell {
+public class Spell {
     private String name;
     private int healPoints;
 
-    public Spells(String name, int healPoints){
+    public Spell(String name, int healPoints){
         this.name = name;
         this.healPoints = healPoints;
     }
@@ -24,9 +23,5 @@ public class Spells implements IHeal, ISpell {
 
     public void setHealPoints(int healPoints) {
         this.healPoints = healPoints;
-    }
-
-    public int cast(Spells spells) {
-        return 0;
     }
 }

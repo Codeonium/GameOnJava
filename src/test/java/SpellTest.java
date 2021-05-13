@@ -1,22 +1,23 @@
+import magicspells.Spell;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class SpellsTest {
-    Spells spells;
+public class SpellTest {
+    Spell spell;
 
     @Before
     public void setUp() {
-        spells = new Spells("FireHeal", 12);
+        spell = new Spell("FireHeal", 12);
     }
 
     @Test
     public void hasName() {
-        assertEquals("FireHeal", spells.getName());
+        assertEquals("FireHeal", spell.getName());
     }
     @Test
     public void hasHealPoints() {
-        assertEquals(12, spells.getHealPoints());
+        assertEquals(12, spell.getHealPoints());
     }
 }

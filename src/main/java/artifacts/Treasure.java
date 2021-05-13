@@ -1,3 +1,5 @@
+package artifacts;
+
 public class Treasure {
 
     private String name;
