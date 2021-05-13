@@ -1,4 +1,4 @@
 package races;
 
-public class Race {
+public abstract class Race {
 }
