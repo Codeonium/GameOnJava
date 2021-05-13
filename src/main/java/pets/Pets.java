@@ -1,4 +1,0 @@
-package pets;
-
-interface Pets{
-}
